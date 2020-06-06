@@ -1,0 +1,42 @@
+:root {
+    --fondo: #e6de63;
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --panel: #d4bb49;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    background: var(--fondo);
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+#img-perfil {
+    border-radius: 50%;
+    height: 100%;
+}
+header {
+    height: 10vh;
+}
+#showcase, header {
+    width: 80%;
+    margin: 0 auto;
+}
+.panel {
+    width: 100%;
+    height: minmax(300px, 80vh);
+    background-color: var(--panel);
+}
+.panel-habilidades, .panel-experiencia, .panel-personal {
+    display: none;
+}
+.panel-proyectos div {
+    background-color: red;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
