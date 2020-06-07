@@ -1,10 +1,9 @@
 :root {
-    --fondo: #e6de63;
-    --primary: #ddd;
+    --fondo: #F7F2EF;
+    --primary: #E74A43;
     --dark: #333;
     --light: #fff;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    --panel: #d4bb49;
 }
 html {
     box-sizing: border-box;
@@ -21,22 +20,47 @@ body {
 header {
     height: 10vh;
 }
-#showcase, header {
+#showcase, #dash {
     width: 80%;
     margin: 0 auto;
 }
 .panel {
     width: 100%;
     height: minmax(300px, 80vh);
-    background-color: var(--panel);
+    background-color: var(--primary);
 }
 .panel-habilidades, .panel-experiencia, .panel-personal {
     display: none;
 }
 .panel-proyectos div {
-    background-color: red;
+
 }
-nav {
+#dash {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 10px;
 }
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--light);
+}
+.selected {
+    border-bottom: 2px solid black;
+}
+
+/* panel de proyectos */
+#reja-proyectos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);    
+}
+#reja-proyectos div img {
+    width: 100%;
+}
+#reja-proyectos div img:hover {
+    opacity: 0.6;
+}
+
