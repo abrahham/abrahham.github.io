@@ -20,9 +20,13 @@ body {
 header {
     height: 10vh;
 }
-#showcase, #dash {
+header h1 {
+    display: inline-block;
+}
+#showcase, #dash, header {
     width: 80%;
     margin: 0 auto;
+    margin-top: 10px;
 }
 .panel {
     width: 100%;
@@ -37,8 +41,7 @@ header {
 }
 #dash {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 10px;
+    grid-template-columns: repeat(4, 1fr);    
 }
 button {
     cursor: pointer;
