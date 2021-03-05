@@ -23,6 +23,7 @@ h1 {
 }
 h2 {
 	font-size: 1.2rem;
+	margin: 10px 0;
 }
 #proyectos {
 	display: grid;
@@ -33,6 +34,36 @@ h2 {
 	background-color: var(--dk);
 	color: #eee;
 }
+.tarjeta-img {
+	overflow: hidden;
+}
+.tarjeta-info {
+	padding: 10px;
+}
+.tarjeta-info > p:first-child {
+	font-size: 1.4rem;
+}
+.t-descripcion {
+	margin-top: 10px;
+}
+.t-cont-iconos {
+	background-color: #eee;
+	border-radius: 5px;
+	display: inline;
+	padding: 10px;
+}
 .tarjeta-rect img {
 	width: 100%;
 }
+.tarjeta-rect img:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: transform 2s ease;
+}
+i {
+	color: var(--dk);
+	font-size: 22px;
+	margin: 10px 0;
+}
+ {
+ 
