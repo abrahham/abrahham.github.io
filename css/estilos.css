@@ -15,7 +15,17 @@ ul {
 	list-style: none;
 }
 nav li {
+	font-size: 1rem;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 5px;
 	cursor: pointer;
+	margin: 5px;
+	padding: 5px;
+}
+nav li:hover {
+	background-color: white;
+	color: #130D4D;
 }
 #titulo {
 	display: flex;
@@ -23,10 +33,12 @@ nav li {
 	align-items: center;	
 	justify-content: space-around;
 	background-color: var(--dk);
-	color: #eee;
-	padding: 10px;
+	color: #eee;	
 	font-size: 1.4rem;
 	height: 100vh;
+}
+#titulo p {
+	text-align: center;
 }
 #titulo img {
 	width: 80%;
@@ -37,6 +49,14 @@ nav li {
 #cuerpo {
 	display: grid;
 	grid-template-columns: 20% 80%;
+}
+#aparador {
+	max-height: 100vh;
+	overflow: auto;
+	overflow-x: hidden;
+}
+#aparador img {
+	max-width: 400px;
 }
 h1 {
 	font-size: 1.4rem;
@@ -90,4 +110,10 @@ i {
 	color: var(--dk);
 	font-size: 22px;
 	margin: 10px 0;
+}
+.p-intereses > div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	padding: 10px;
 }
