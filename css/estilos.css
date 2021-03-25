@@ -8,27 +8,47 @@
 	--lg: #;
 	--dk: #130D4D;
 }
+h2 {
+	text-align: center;
+}
+ul {
+	list-style: none;
+}
 #titulo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: space-around;
 	background-color: var(--dk);
 	color: #eee;
 	padding: 10px;
 	font-size: 1.4rem;
+	height: 100vh;
 }
-.contenedor {
-	width: 90%;
-	margin: 0 auto;
+#titulo img {
+	width: 80%;
+}
+#titulo p {
+	font-size: 1.1rem;
+}
+#cuerpo {
+	display: grid;
+	grid-template-columns: 20% 80%;
 }
 h1 {
+	font-size: 1.4rem;
 	text-align: center;
 }
 h2 {
 	font-size: 1.2rem;
 	margin: 10px 0;
 }
-#proyectos {
+#proyectos { 
+	padding: 10px;	
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
+	width: 100%;
 }
 .tarjeta-rect {
 	background-color: var(--dk);
@@ -52,6 +72,9 @@ h2 {
 	display: inline;
 	padding: 10px;
 }
+.t-cont-iconos:hover {
+	opacity: 0.8;
+}
 .tarjeta-rect img {
 	width: 100%;
 }
@@ -65,5 +88,3 @@ i {
 	font-size: 22px;
 	margin: 10px 0;
 }
- {
- 
