@@ -14,6 +14,9 @@ h2 {
 ul {
 	list-style: none;
 }
+nav li {
+	cursor: pointer;
+}
 #titulo {
 	display: flex;
 	flex-direction: column;
