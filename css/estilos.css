@@ -18,9 +18,9 @@ nav li {
 	font-size: 1rem;
 	text-align: center;
 	border: 1px solid white;
-	border-radius: 5px;
+	box-shadow: 1px 1px 3px #888888;
 	cursor: pointer;
-	margin: 5px;
+	margin: 10px;
 	padding: 5px;
 }
 nav li:hover {
@@ -111,9 +111,30 @@ i {
 	font-size: 22px;
 	margin: 10px 0;
 }
+.panel {
+	padding: 10px;
+}
+.p-habilidades > div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	text-align: center;
+}
+.p-habilidades ul:hover {
+	border: 1px solid #130D4D;
+	color: #130D4D;
+	background-color: white;
+}
+.p-habilidades ul {
+	background-color: #130D4D;
+	color: white;
+	padding: 10px;
+}
+.p-habilidades li {
+	margin: 5px;
+}
 .p-intereses > div {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 10px;
-	padding: 10px;
 }
